@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <style>
+      body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 0;
+        min-height: 100vh;
+      }
+      .container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: smaller;
+        border-radius: 15px;
+      }
+      .plan {
+        display: flex;
+        gap: 110px;
+        background-color: hsl(225, 100%, 98%);
+        padding: 15px;
+        width: 74%;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+      .img-plan {
+        display: flex;
+        gap: 15px;
+      }
+      .icon {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+      .annual-plan {
+        display: flex;
+        flex-direction: column;
+      }
+      .payment-button {
+        background-color: hsl(245, 75%, 52%);
+        padding: 10px;
+        width: 80%;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        margin-top: 20px;
+        font-weight: 600;
+      }
+      .cancel-button {
+        background: none;
+        border: none;
+        color: gray;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+      .link {
+        margin-top: 7px;
+      }
+      .price {
+        font-size: 15px;
+        color: gray;
+      }
+      p {
+        color: gray;
+        margin-top: 5px;
+      }
+      h2 {
+        margin-top: 30px;
+      }
+      .hero {
+        border-radius: 10px 10px 0px 0px;
+      }
+      /* .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="hero"
+        src="images/illustration-hero.svg"
+        alt="hero illustration"
+      />
+      <h2>Order Summary</h2>
+      <p>
+        You can now listen to millions of songs,<br />audiobooks, and podcasts
+        on any device<br />
+        anywhere you like!
+      </p>
+      <div class="plan">
+        <div class="img-plan">
+          <img class="icon" src="images/icon-music.svg" alt="music icon" />
+          <div class="annual-plan">
+            <span> <strong>Annual Plan</strong></span>
+            <span class="price">$59.99/year</span>
+          </div>
+        </div>
+        <a class="link" href="link">Change</a>
+      </div>
+      <button class="payment-button">Proceed to Payment</button>
+      <button class="cancel-button">Cancel Order</button>
+    </div>
+  </body>
+</html>
